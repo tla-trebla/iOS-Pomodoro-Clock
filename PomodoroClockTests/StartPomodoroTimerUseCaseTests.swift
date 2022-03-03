@@ -6,15 +6,24 @@
 //
 
 import XCTest
+@testable import PomodoroClock
 
 class StartPomodoroTimerUseCaseTests: XCTestCase {
 
     func test_StartPomodoroTimer_ShouldStartWorkingTimer() {
-        let sut = StartPomodoroTimerUseCase()
+        let sut = StartPomodoroTimerUseCaseSpy()
         
         sut.startPomodoroTimer()
         
-        XCTAssertTrue(sut.isCallingStartRestTimer)
+        XCTAssertTrue(sut.isCallingStartRestTimerCount == 1)
     }
 
+}
+
+class StartPomodoroTimerUseCaseSpy: StartPomodoroTimerUseCaseProtocol {
+    private(set) var isCallingStartRestTimerCount = 0
+    
+    func startPomodoroTimer() {
+        isCallingStartRestTimerCount += 1
+    }
 }
