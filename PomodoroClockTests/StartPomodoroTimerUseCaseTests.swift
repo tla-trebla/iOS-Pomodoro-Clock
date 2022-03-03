@@ -9,8 +9,8 @@ import XCTest
 @testable import PomodoroClock
 
 class StartPomodoroTimerUseCaseTests: XCTestCase {
-
-    func test_StartPomodoroTimer_ShouldStartWorkingTimer() {
+    
+    func test_WhenWorkingTimerIsOver_ShouldStartRestTimer() {
         let sut = StartPomodoroTimerUseCaseSpy()
         
         sut.startPomodoroTimer()
