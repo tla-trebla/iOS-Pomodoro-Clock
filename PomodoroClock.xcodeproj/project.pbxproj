@@ -14,6 +14,7 @@
 		5E90AADD27D0AE7900C8F762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E90AADC27D0AE7900C8F762 /* Assets.xcassets */; };
 		5E90AAE027D0AE7900C8F762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E90AADE27D0AE7900C8F762 /* LaunchScreen.storyboard */; };
 		5E90AB0227D0B50F00C8F762 /* PomodoroTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0127D0B50F00C8F762 /* PomodoroTimerTests.swift */; };
+		5E90AB0427D0B58900C8F762 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0327D0B58900C8F762 /* PomodoroTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		5E90AAE127D0AE7900C8F762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E90AAF827D0B31B00C8F762 /* PomodoroClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E90AB0127D0B50F00C8F762 /* PomodoroTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerTests.swift; sourceTree = "<group>"; };
+		5E90AB0327D0B58900C8F762 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				5E90AADC27D0AE7900C8F762 /* Assets.xcassets */,
 				5E90AADE27D0AE7900C8F762 /* LaunchScreen.storyboard */,
 				5E90AAE127D0AE7900C8F762 /* Info.plist */,
+				5E90AB0327D0B58900C8F762 /* PomodoroTimer.swift */,
 			);
 			path = PomodoroClock;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			files = (
 				5E90AAD827D0AE7800C8F762 /* ViewController.swift in Sources */,
 				5E90AAD427D0AE7800C8F762 /* AppDelegate.swift in Sources */,
+				5E90AB0427D0B58900C8F762 /* PomodoroTimer.swift in Sources */,
 				5E90AAD627D0AE7800C8F762 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
