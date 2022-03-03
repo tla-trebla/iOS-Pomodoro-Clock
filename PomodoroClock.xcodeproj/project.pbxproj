@@ -15,6 +15,7 @@
 		5E90AAE027D0AE7900C8F762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E90AADE27D0AE7900C8F762 /* LaunchScreen.storyboard */; };
 		5E90AB0227D0B50F00C8F762 /* PomodoroTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0127D0B50F00C8F762 /* PomodoroTimerTests.swift */; };
 		5E90AB0427D0B58900C8F762 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0327D0B58900C8F762 /* PomodoroTimer.swift */; };
+		5E90AB0627D0ECEB00C8F762 /* StartPomodoroTimerUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0527D0ECEB00C8F762 /* StartPomodoroTimerUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		5E90AAF827D0B31B00C8F762 /* PomodoroClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E90AB0127D0B50F00C8F762 /* PomodoroTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerTests.swift; sourceTree = "<group>"; };
 		5E90AB0327D0B58900C8F762 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
+		5E90AB0527D0ECEB00C8F762 /* StartPomodoroTimerUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPomodoroTimerUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				5E90AB0127D0B50F00C8F762 /* PomodoroTimerTests.swift */,
+				5E90AB0527D0ECEB00C8F762 /* StartPomodoroTimerUseCaseTests.swift */,
 			);
 			path = PomodoroClockTests;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E90AB0227D0B50F00C8F762 /* PomodoroTimerTests.swift in Sources */,
+				5E90AB0627D0ECEB00C8F762 /* StartPomodoroTimerUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
