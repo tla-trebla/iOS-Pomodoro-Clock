@@ -9,9 +9,9 @@ import Foundation
 
 struct PomodoroTimer {
     
-    var timer = 0
+    var workingTimer = 0
     
-    mutating func setTimer(for minutes: Int) {
-        timer = minutes
+    mutating func setWorkingTimer(for minutes: Int) {
+        workingTimer = minutes
     }
 }

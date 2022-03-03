@@ -16,12 +16,20 @@ class PomodoroTimerTests: XCTestCase {
         XCTAssertNotNil(sut)
     }
     
-    func test_SetTimerTo25Mins_ShouldSaveTimer() {
+    func test_SetWorkingTimer_ShouldSaveWorkingTimer() {
         var sut = PomodoroTimer()
         
-        sut.setTimer(for: 25)
+        sut.setWorkingTimer(for: 25)
         
-        XCTAssertEqual(sut.timer, 25)
+        XCTAssertEqual(sut.workingTimer, 25)
+    }
+    
+    func test_SetRestTimer_ShouldSaveRestTimer() {
+        var sut = PomodoroTimer()
+        
+        sut.setRestTimer(for: 5)
+        
+        XCTAssertEqual(sut.restTimer, 5)
     }
 
 }
