@@ -13,7 +13,7 @@
 		5E90AADB27D0AE7800C8F762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E90AAD927D0AE7800C8F762 /* Main.storyboard */; };
 		5E90AADD27D0AE7900C8F762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E90AADC27D0AE7900C8F762 /* Assets.xcassets */; };
 		5E90AAE027D0AE7900C8F762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E90AADE27D0AE7900C8F762 /* LaunchScreen.storyboard */; };
-		5E90AAFB27D0B31B00C8F762 /* PomodoroClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AAFA27D0B31B00C8F762 /* PomodoroClockTests.swift */; };
+		5E90AB0227D0B50F00C8F762 /* PomodoroTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0127D0B50F00C8F762 /* PomodoroTimerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		5E90AADF27D0AE7900C8F762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E90AAE127D0AE7900C8F762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E90AAF827D0B31B00C8F762 /* PomodoroClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E90AAFA27D0B31B00C8F762 /* PomodoroClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroClockTests.swift; sourceTree = "<group>"; };
+		5E90AB0127D0B50F00C8F762 /* PomodoroTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		5E90AAF927D0B31B00C8F762 /* PomodoroClockTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E90AAFA27D0B31B00C8F762 /* PomodoroClockTests.swift */,
+				5E90AB0127D0B50F00C8F762 /* PomodoroTimerTests.swift */,
 			);
 			path = PomodoroClockTests;
 			sourceTree = "<group>";
@@ -150,6 +150,7 @@
 					};
 					5E90AAF727D0B31B00C8F762 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 5E90AACF27D0AE7800C8F762;
 					};
 				};
@@ -208,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E90AAFB27D0B31B00C8F762 /* PomodoroClockTests.swift in Sources */,
+				5E90AB0227D0B50F00C8F762 /* PomodoroTimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,14 +419,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 75KSF446RQ;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.albert-alt.PomodoroClockTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PomodoroClock.app/PomodoroClock";
@@ -436,10 +444,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 75KSF446RQ;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.albert-alt.PomodoroClockTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
