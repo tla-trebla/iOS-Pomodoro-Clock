@@ -17,7 +17,7 @@ class PomodoroTimerTests: XCTestCase {
     }
     
     func test_SetTimerTo25Mins_ShouldSaveTimer() {
-        let sut = PomodoroTimer()
+        var sut = PomodoroTimer()
         
         sut.setTimer(for: 25)
         
