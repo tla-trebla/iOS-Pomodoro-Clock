@@ -10,6 +10,15 @@ import XCTest
 
 class StartPomodoroTimerUseCaseTests: XCTestCase {
     
+    func test_WhenStartPomodoroTimer_ShouldStartWorkingTimer() {
+        let sut = StartPomodoroTimerUseCase()
+        sut.presenter = StartPomodoroTimerPresenterOutput()
+        
+        sut.startPomodoroTimer()
+        
+        XCTAssertTrue(presenter.presentWorkingTimer)
+    }
+    
     func test_WhenWorkingTimerIsOver_ShouldStartRestTimer() {
         let sut = StartPomodoroTimerUseCaseSpy()
         
