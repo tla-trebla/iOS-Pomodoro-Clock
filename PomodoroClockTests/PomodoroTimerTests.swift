@@ -9,27 +9,27 @@ import XCTest
 @testable import PomodoroClock
 
 class PomodoroTimerTests: XCTestCase {
+    
+    private var sut: PomodoroTimer!
+    
+    override func setUp() {
+        sut = PomodoroTimer()
+    }
 
     func test_InitializePomodoroTimer() {
-        let sut = PomodoroTimer()
-        
-        XCTAssertNotNil(sut)
+        XCTAssertNotNil(self.sut)
     }
     
     func test_SetWorkingTimer_ShouldSaveWorkingTimer() {
-        var sut = PomodoroTimer()
+        self.sut.setWorkingTimer(for: 25)
         
-        sut.setWorkingTimer(for: 25)
-        
-        XCTAssertEqual(sut.workingTimer, 25)
+        XCTAssertEqual(self.sut.workingTimer, 25)
     }
     
     func test_SetRestTimer_ShouldSaveRestTimer() {
-        var sut = PomodoroTimer()
+        self.sut.setRestTimer(for: 5)
         
-        sut.setRestTimer(for: 5)
-        
-        XCTAssertEqual(sut.restTimer, 5)
+        XCTAssertEqual(self.sut.restTimer, 5)
     }
 
 }
