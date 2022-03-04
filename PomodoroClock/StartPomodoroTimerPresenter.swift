@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol StartPomodoroTimerPresenterOutput {
+protocol StartPomodoroTimerPresenterOutputProtocol {
     func displayWorkingTimer(response workingTimer: Int)
 }

@@ -11,28 +11,14 @@ import XCTest
 class StartPomodoroTimerUseCaseTests: XCTestCase {
     
     func test_WhenStartPomodoroTimer_ShouldStartWorkingTimer() {
-        let sut = StartPomodoroTimerUseCase()
-        sut.presenter = StartPomodoroTimerPresenterOutput()
+        let presenterSpy = StartPomodoroTimerPresenterOutputSpy()
+        var sut = StartPomodoroTimerUseCase()
+        sut.presenter = presenterSpy
+        let request = PomodoroTimer(workingTimer: 25, restTimer: 5)
         
-        sut.startPomodoroTimer()
+        sut.startPomodoroTimer(with: request)
         
-        XCTAssertTrue(presenter.presentWorkingTimer)
-    }
-    
-    func test_WhenWorkingTimerIsOver_ShouldStartRestTimer() {
-        let sut = StartPomodoroTimerUseCaseSpy()
-        
-        sut.startPomodoroTimer()
-        
-        XCTAssertTrue(sut.isCallingStartRestTimerCount == 1)
+        XCTAssertTrue(presenterSpy.presentWorkingTimerCalled)
     }
 
-}
-
-class StartPomodoroTimerUseCaseSpy: StartPomodoroTimerUseCaseProtocol {
-    private(set) var isCallingStartRestTimerCount = 0
-    
-    func startPomodoroTimer() {
-        isCallingStartRestTimerCount += 1
-    }
 }
