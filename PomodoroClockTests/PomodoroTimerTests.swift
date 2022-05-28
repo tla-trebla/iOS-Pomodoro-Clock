@@ -16,12 +16,13 @@ class PomodoroTimerTests: XCTestCase {
         sut = PomodoroTimer()
     }
 
-    func test_InitializePomodoroTimer() {
-        XCTAssertNotNil(self.sut)
+    func test_InitialTimerValueZero() {
+        XCTAssertEqual(sut.workingTimer, 0)
+        XCTAssertEqual(sut.restTimer, 0)
     }
     
     func test_SetWorkingTimer_ShouldSaveWorkingTimer() {
-        self.sut.setWorkingTimer(for: 25)
+        try? self.sut.setWorkingTimer(for: 25)
         
         XCTAssertEqual(self.sut.workingTimer, 25)
     }
@@ -30,6 +31,12 @@ class PomodoroTimerTests: XCTestCase {
         self.sut.setRestTimer(for: 5)
         
         XCTAssertEqual(self.sut.restTimer, 5)
+    }
+    
+    func test_SetInvalidWorkingTimer_ShouldNotSaveWorkingTimer() {
+        XCTAssertThrowsError(try self.sut.setWorkingTimer(for: -1)) { error in
+            XCTAssertEqual(error as? PomodoroTimerError, PomodoroTimerError.InvalidWorkingTimer)
+        }
     }
 
 }

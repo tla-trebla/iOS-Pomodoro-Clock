@@ -19,6 +19,7 @@
 		5E90AB0427D0B58900C8F762 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0327D0B58900C8F762 /* PomodoroTimer.swift */; };
 		5E90AB0627D0ECEB00C8F762 /* StartPomodoroTimerUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0527D0ECEB00C8F762 /* StartPomodoroTimerUseCaseTests.swift */; };
 		5E90AB0827D0FDFB00C8F762 /* StartPomodoroTimerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90AB0727D0FDFB00C8F762 /* StartPomodoroTimerUseCase.swift */; };
+		5E94B88B2841A98400AD9AD5 /* PomodoroTimerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E94B88A2841A98400AD9AD5 /* PomodoroTimerError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5E90AB0327D0B58900C8F762 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 		5E90AB0527D0ECEB00C8F762 /* StartPomodoroTimerUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPomodoroTimerUseCaseTests.swift; sourceTree = "<group>"; };
 		5E90AB0727D0FDFB00C8F762 /* StartPomodoroTimerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPomodoroTimerUseCase.swift; sourceTree = "<group>"; };
+		5E94B88A2841A98400AD9AD5 /* PomodoroTimerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				5E90AADE27D0AE7900C8F762 /* LaunchScreen.storyboard */,
 				5E90AAE127D0AE7900C8F762 /* Info.plist */,
 				5E90AB0327D0B58900C8F762 /* PomodoroTimer.swift */,
+				5E94B88A2841A98400AD9AD5 /* PomodoroTimerError.swift */,
 				5E90AB0727D0FDFB00C8F762 /* StartPomodoroTimerUseCase.swift */,
 				5E19943027D24E1F000D428E /* StartPomodoroTimerPresenter.swift */,
 			);
@@ -226,6 +229,7 @@
 				5E90AAD427D0AE7800C8F762 /* AppDelegate.swift in Sources */,
 				5E19943127D24E1F000D428E /* StartPomodoroTimerPresenter.swift in Sources */,
 				5E90AB0427D0B58900C8F762 /* PomodoroTimer.swift in Sources */,
+				5E94B88B2841A98400AD9AD5 /* PomodoroTimerError.swift in Sources */,
 				5E90AB0827D0FDFB00C8F762 /* StartPomodoroTimerUseCase.swift in Sources */,
 				5E90AAD627D0AE7800C8F762 /* SceneDelegate.swift in Sources */,
 			);

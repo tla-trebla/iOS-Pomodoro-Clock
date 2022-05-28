@@ -12,7 +12,10 @@ struct PomodoroTimer {
     var workingTimer = 0
     var restTimer = 0
     
-    mutating func setWorkingTimer(for minutes: Int) {
+    mutating func setWorkingTimer(for minutes: Int) throws {
+        if minutes < 0 {
+            throw PomodoroTimerError.InvalidWorkingTimer
+        }
         workingTimer = minutes
     }
     
